@@ -1,6 +1,11 @@
 from produto import Produto
 from menu import Menu
 from pedido import Pedido
+from interface import criar_interface
+
+if __name__ == "__main__":
+    criar_interface()
+
 
 while True:
     opcao = int(input('DIGITE UMA OPÇÃO:\n1 - ADICIONAR PRODUTOS  \n2 - ENTRAR NO MENU\n3 - PEDIDO\n0 - SAIR DO PROGRAMA\n --> '))
