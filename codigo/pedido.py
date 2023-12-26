@@ -16,10 +16,10 @@ class Pedido:
         resposta2 = 0
         valorFinal = 0
         self.mesa = int(input('Mesa -> '))
-        self.nomeCliente = str(input('Nome -> '))
+        self.nomeCliente = input('Nome -> ')
         while resposta2 != '0':
             tipoProduto = int(input('O que você deseja pedir?\n1 - PRATOS\n2 - BEBIDAS\n3 - SOBREMESAS\n ->  '))
-            codigoProduto = str(input('Código -> '))
+            codigoProduto = input('Código -> ')
             quantidade = int(input('Quantidade -> '))
             if tipoProduto == 1:
                 with open('pratos.txt' , 'r') as f:
@@ -29,10 +29,10 @@ class Pedido:
                         if codigoProduto == linha[0]:
                             pedido = float(linha[2])
                             valorFinal += pedido * quantidade
-                            resposta = str(input('1 - Continuar Pedido\n2 - Fechar Pedido\n ->  '))
+                            resposta = input('1 - Continuar Pedido\n2 - Fechar Pedido\n ->  ')
                             if resposta == '2':
                                 print(f' Valor final do pedido: R${valorFinal}')
-                                resposta2 = str(input('0 - Encerrar\n -> '))  
+                                resposta2 = input('0 - Encerrar\n -> ')
                             elif resposta == '1':
                                 continue
 
@@ -45,10 +45,10 @@ class Pedido:
                             pedido = linha[2]
                             pedido = float(pedido)
                             valorFinal += pedido * quantidade
-                            resposta = str(input('1 - Continuar Pedido\n2 - Fechar Pedido\n ->  '))
+                            resposta = input('1 - Continuar Pedido\n2 - Fechar Pedido\n ->  ')
                             if resposta == '2':
                                 print(f' Valor final do pedido: R${valorFinal}')
-                                resposta2 = str(input('0 - Encerrar\n -> '))  
+                                resposta2 = input('0 - Encerrar\n -> ')
                             elif resposta == '1':
                                 continue
     
@@ -61,10 +61,10 @@ class Pedido:
                             pedido = linha[2]
                             pedido = float(pedido)
                             valorFinal += pedido * quantidade
-                            resposta = str(input('1 - Continuar Pedido\n2 - Fechar Pedido\n ->  '))
+                            resposta = input('1 - Continuar Pedido\n2 - Fechar Pedido\n ->  ')
                             if resposta == '2':
                                 print(f'Valor final do pedido: R${valorFinal}')
-                                resposta2 = str(input('0 - Encerrar\n -> '))  
+                                resposta2 = input('0 - Encerrar\n -> ')
                             elif resposta == '1':
                                 continue
 

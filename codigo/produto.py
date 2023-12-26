@@ -11,9 +11,9 @@ class Produto:
         while  resposta2 != 4:
             print('1 - Pratos\n2 - Bebidas\n3 - Sobremesas')
             tipoProduto = int(input('--> '))
-            codigo = str(input('Codigo: '))
-            nomeProduto = str(input('Digite o nome do seu produto: '))
-            precoProduto = str(input('Digite o preço do seu produto: R$'))
+            codigo = input('Codigo: ')
+            nomeProduto = input('Digite o nome do seu produto: ')
+            precoProduto = float(input('Digite o preço do seu produto: R$'))
 
             if tipoProduto == 1:
                 arquivoPratos()
