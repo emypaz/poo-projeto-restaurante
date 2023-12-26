@@ -4,7 +4,7 @@ from produto import Produto
 from menu import Menu
 from pedido import Pedido
 
-class InterfaceGrafica:
+class interfaceGrafica:
     def __init__(self, root):
         self.root = root
         self.root.title("Sistema de Pedidos")
@@ -53,5 +53,5 @@ class InterfaceGrafica:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    app = InterfaceGrafica(root)
+    app = interfaceGrafica(root)
     root.mainloop()

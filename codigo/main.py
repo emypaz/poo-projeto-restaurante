@@ -1,10 +1,11 @@
+import tkinter as tk
 from produto import Produto
 from menu import Menu
 from pedido import Pedido
-from interface import criar_interface
+from interface import interfaceGrafica
 
 if __name__ == "__main__":
-    criar_interface()
+    interfaceGrafica()
 
 
 while True:
